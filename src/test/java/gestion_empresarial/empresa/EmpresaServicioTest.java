@@ -27,6 +27,12 @@ class EmpresaServicioTest {
     }
 
     @Test
+    void testCalcularSalarioTotalIncorrecto(){
+        double total = service.calcularSalarioTotal();
+        assertEquals(1000,total);
+    }
+
+    @Test
     void testBuscarEmpleadoExistente() {
         assertTrue(service.buscarporId("1").isPresent());
     }

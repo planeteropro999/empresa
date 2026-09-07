@@ -21,6 +21,7 @@ public class Empleado {
         if (id == null || id.isBlank()) throw new IllegalArgumentException("El ID no puede estar vacío");
         if (salario < 0) throw new IllegalArgumentException("El salario no puede ser negativo");
         this.nombre = nombre;
+        this.id = id;
         this.salario = salario;
         this.departamento = departamento;
     }
